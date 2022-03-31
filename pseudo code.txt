@@ -1,0 +1,26 @@
+
+int amountRand;
+
+//
+StreamReader outputFile;
+
+outputFile = File.CreateText("numbers.txt");
+
+//Get amount of random numbers
+amountRand = TryParse(txtUserInput.Text out int);
+
+//create this many random numbers
+while (!= amountRand, count++)
+{
+	outputFile.WriteLine(rand);
+}
+
+
+
+//use the count variable to display the amount of numbers in a MessageDisplay
+MessageBox.Display = TryParse(count out string);
+
+//add all values together and display
+
+
+//

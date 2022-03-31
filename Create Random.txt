@@ -1,0 +1,4 @@
+
+
+//Create a random object
+Random rand = new Random();

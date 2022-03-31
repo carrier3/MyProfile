@@ -1,0 +1,186 @@
+* { box-sizing: border-box; }
+header, main, nav, footer, figure, figcaption, aside, section, article { display: block; }
+body {
+background-color: #000000;
+	   font-family: Arial, Helvetica, sans-serif;
+}
+
+header { background-color: #330033;
+      color: #FFFFFF; 
+      height: 120px;
+	  text-align: center;
+	  padding-top: 30px;
+	  padding-left: 3em;
+}
+nav { font-weight: bold;
+	 font-size: 120%;
+	 padding: 1.5em;
+	 float: left;
+	 width: 160px;
+}
+nav a { text-decoration: none;
+		transition: color 3s linear; }
+nav a:link { color: #000000; }
+nav a:visited { color: #344873; }
+nav a:hover { color: #A52A2A; }
+nav ul {  list-style-type: none;
+        margin: 0;
+		padding-left: 0;
+		font-size: 1.2em;
+}
+main { background-color: #FFFFFF;
+	  padding: 1px 20px 20px 30px;
+	  margin-left: 190px;
+      display: block;
+
+}
+
+h1 { margin-bottom: 0; 
+    margin-top: 0;
+	letter-spacing: .25em;
+	font-size: 3em;
+    font-family: Georgia, 'Times New Roman', serif; }
+h2 { color: #000000; 
+     font-family: Georgia, 'Times New Roman', serif; 
+	 text-shadow: 1px 1px 1px #CCCCCC; 
+}
+h3 { color: #000000;
+     font-family: Georgia, 'Times New Roman', serif; }
+	 
+main ul { list-style-image: url(marker.gif); } 
+
+footer { font-size: 75%;
+       font-style: italic;
+	   text-align: center;
+	   font-family: Georgia, 'Times New Roman', serif; 
+	   padding: 20px;
+	   margin-left: 190px;
+	   background-color: #FFFFFF;
+	   clear: both;
+
+}
+dt { color: #000033; }
+
+table { border: 2px solid #663366;
+		border-collapse: collapse;
+}
+td, th { padding: 0.5em;
+       border: 2px solid #666666; }
+td {text-align: center; }
+tr:nth-of-type(odd) { background-color: #CCCCFF; }
+
+label	{ float: left;
+		display: block;
+		text-align: right;
+		width: 120px;
+		padding-right: 10px;
+}
+
+input textarea 	{ display: block;
+				margin-bottom: 20px;
+}
+video, embed { float: right; padding-left: 20px; }
+submit	{ margin-left: 130px; }
+figure { position: absolute;
+		left: 280px;
+		text-align: center;
+}
+
+
+.resort { color: #5C7FA3; 
+          font-weight: bold;
+}
+.text { text-align: left; }
+
+
+#wrapper { margin-left: auto;
+           margin-right: auto;
+          width: 80%;
+		  background-color:  #FFE4B5;
+		  min-width: 960px;
+		  max-width: 2048px;
+		  box-shadow: 3px 3px 3px #333333;
+		  background-color: #B8DBED;
+          background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3); 
+		  border: 1px solid #000033;
+}
+#gallery {height: 200px; }
+#contact { font-size: 90%; }
+#mobile { display: none; }
+#desktop { display: inline; }
+#bannerhero { height: 300px;
+			margin-left: 190px;
+            background-image: url(banner.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+}
+
+#hshero	{ float: right; }
+
+#gallery { position: relative; }
+
+#gallery ul { width: 300px;
+				list-style: none;
+}
+
+#gallery li { display: inline;
+				float: left;
+				padding: 10px;
+}
+
+#gallery img { border: none; }
+
+#gallery a { text-decoration: none;
+			color: #000000;
+			font-style: italic;
+}
+
+#gallery span { position: absolute; 
+				left: -1000px;
+				opacity: 1;
+				transition: opacity 3s ease-in-out;
+}
+
+#gallery a:hover span { position: absolute;
+						top: 15px;
+						left: 320px;
+						text-align: center;
+						opacity: 1;
+}
+
+
+        
+@media only screen and (max-width: 64em) {
+	body { margin: 0;
+	      background-color: #FFFFFF; }
+	#wrapper { min-width: 0;
+	           width: auto;
+			   box-shadow: none; border: none; }
+   header { padding-top: .5em; padding-bottom: .5em; padding-left: 0;
+            height: auto;	}
+	h1 { letter-spacing: .1em; }
+	main { margin-left: 0; }
+	nav { float: none;
+	     width: auto;
+		 text-align: center;
+		 padding: 0.5em; }
+	nav li { display: inline;
+	      padding: 0.25em 0.75em; }
+    #bannerhero { margin-left: 0; height: 200px; }
+	footer { margin-left: 0; }
+}
+@media only screen and (max-width: 37.5em) {
+	
+	h1 { font-size: 2em;}
+    main { padding: 0.1em 1em; 
+		   font-size: 90%; }
+	label { float: none; text-align: left; }
+	input[type="submit"] { margin-left: 0; }
+	nav { padding: 0; }
+	nav li { display: block; margin: 0; border: solid 2px #330000; }
+	nav a { display: block; }
+	#bannerhero { background-image: none; height: 0; }
+	#mobile { display: inline; }
+	#desktop { display: none; }
+	#gallery { display: none; }
+}

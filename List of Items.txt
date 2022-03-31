@@ -1,0 +1,13 @@
+Email hyperlink - at the bottom of all pages
+
+External hyperlink
+	Resume PDF - work.html
+	DACC Transcript - education.html
+	DACC Website - education.html
+	BHHS Website - education.html
+
+Table - work.html
+
+Form - index.html
+
+Images - index.html, code.html

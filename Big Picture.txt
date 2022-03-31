@@ -1,0 +1,38 @@
+
+//Object names
+	txtUserInput
+	btnWrite
+	lstDisplay
+	btsRead
+	btnStats
+	btnExit
+
+Apply using System.IO
+
+	load
+Declare variables
+Create a Random Object
+
+	btnRead
+Create the numbers.txt file
+Write to the numbers.txt file using random object method
+Close the outputFile
+
+	btnWrite
+create a StreamReader Object
+Open the inputFile
+
+Display the text from inputFile onto the lstDisplay
+
+	btnStats
+Count the number of items with !StreamReader.EndOfStream();
+	Display total counted in MessageBox
+Use integers to calculate the total value of the random numbers
+	Display the total in MessageBox
+Calculate the average of the values
+	Display average in Message.Box
+
+Close the file
+
+btnExit
+
